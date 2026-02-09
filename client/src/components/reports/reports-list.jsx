@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { apiFetch } from '@/lib/api'
+import { getComplaints } from '../../api'
 
 export function ReportsList() {
   const [reports, setReports] = useState([])
@@ -13,7 +14,7 @@ export function ReportsList() {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const data = await apiFetch('/api/reports')
+        const data = await getComplaints()
         const mappedReports = (data || []).map((r) => ({
           id: r._id || r.id,
           title: r.title,

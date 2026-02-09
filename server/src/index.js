@@ -304,6 +304,38 @@ app.get('/api/public/reports', async (req, res) => {
   }
 })
 
+app.get('/api/complaints', async (req, res) => {
+  try {
+    await connectDB()
+    const reports = await Report.find({ status: { $in: ['open', 'in_progress'] } })
+      .sort({ createdAt: -1 })
+      .limit(20)
+      .lean()
+
+    if (!reports || reports.length === 0) {
+      return res.json([])
+    }
+
+    return res.json(
+      reports.map((r) => ({
+        id: r._id.toString(),
+        title: r.title,
+        category: r.category,
+        location: r.location_name || 'City Center',
+        time: new Date(r.createdAt).toLocaleDateString(),
+        status: r.status,
+        description: r.description,
+        image: r.image_url,
+        user_id: r.user_id,
+        created_at: r.createdAt
+      }))
+    )
+  } catch (error) {
+    console.error('Get Complaints Error:', error)
+    res.status(500).json({ error: 'Internal server error' })
+  }
+})
+
 app.get('/api/reports', authenticateToken, async (req, res) => {
   try {
     await connectDB()
