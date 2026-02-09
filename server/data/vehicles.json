@@ -1,0 +1,85 @@
+{
+  "vehicles": [
+    {
+      "id": "TRUCK-01",
+      "name": "Fleet Vehicle 1",
+      "lat": 22.3100,
+      "lng": 73.1850,
+      "status": "active",
+      "load": 45,
+      "lastUpdated": "2026-02-07T10:30:00Z"
+    },
+    {
+      "id": "TRUCK-02",
+      "name": "Fleet Vehicle 2",
+      "lat": 22.2950,
+      "lng": 73.1950,
+      "status": "maintenance",
+      "load": 0,
+      "lastUpdated": "2026-02-07T10:25:00Z"
+    },
+    {
+      "id": "TRUCK-03",
+      "name": "Fleet Vehicle 3",
+      "lat": 22.3150,
+      "lng": 73.1750,
+      "status": "active",
+      "load": 82,
+      "lastUpdated": "2026-02-07T10:35:00Z"
+    },
+    {
+      "id": "TRUCK-04",
+      "name": "Fleet Vehicle 4",
+      "lat": 22.3050,
+      "lng": 73.1900,
+      "status": "active",
+      "load": 62,
+      "lastUpdated": "2026-02-07T10:32:00Z"
+    },
+    {
+      "id": "TRUCK-05",
+      "name": "Fleet Vehicle 5",
+      "lat": 22.2850,
+      "lng": 73.1700,
+      "status": "inactive",
+      "load": 0,
+      "lastUpdated": "2026-02-07T09:00:00Z"
+    },
+    {
+      "id": "TRUCK-06",
+      "name": "Fleet Vehicle 6",
+      "lat": 22.3200,
+      "lng": 73.1600,
+      "status": "active",
+      "load": 75,
+      "lastUpdated": "2026-02-07T10:33:00Z"
+    },
+    {
+      "id": "TRUCK-07",
+      "name": "Fleet Vehicle 7",
+      "lat": 22.2950,
+      "lng": 73.1550,
+      "status": "maintenance",
+      "load": 0,
+      "lastUpdated": "2026-02-07T10:20:00Z"
+    },
+    {
+      "id": "TRUCK-08",
+      "name": "Fleet Vehicle 8",
+      "lat": 22.3250,
+      "lng": 73.1950,
+      "status": "inactive",
+      "load": 0,
+      "lastUpdated": "2026-02-07T08:30:00Z"
+    },
+    {
+      "id": "TRUCK-09",
+      "name": "Fleet Vehicle 9",
+      "lat": 22.3000,
+      "lng": 73.1650,
+      "status": "active",
+      "load": 55,
+      "lastUpdated": "2026-02-07T10:34:00Z"
+    }
+  ]
+}

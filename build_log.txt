@@ -1,0 +1,41 @@
+
+> my-v0-project@0.1.0 build
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ΓÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\Priyansh\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\pnpm-lock.yaml
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+   - Environments: .env.local
+
+ ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./Downloads/smart-citizen-hub-platform/app/dashboard/map/page.tsx:3:17
+Ecmascript file had an error
+  1 | import dynamic from 'next/dynamic'
+  2 |
+> 3 | const CityMap = dynamic(() => import('@/components/map/city-map').then(mod => mod.CityMap), {
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 4 |   ssr: false,
+    | ^^^^^^^^^^^^^
+> 5 |   loading: () => <div className="w-full h-screen flex items-center justify-center">Loading map...</div>,
+    | ^^^^^^^^^^^^^
+> 6 | })
+    | ^^^
+  7 |
+  8 | export const metadata = {
+  9 |   title: 'City Map - SmartCitizen',
+
+`ssr: false` is not allowed with `next/dynamic` in Server Components. Please move it into a Client Component.
+
+
+    at <unknown> (./Downloads/smart-citizen-hub-platform/app/dashboard/map/page.tsx:3:17)

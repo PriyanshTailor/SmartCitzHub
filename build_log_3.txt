@@ -1,0 +1,53 @@
+
+> my-v0-project@0.1.0 build
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ΓÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\Priyansh\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\pnpm-lock.yaml
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ Γ£ô Compiled successfully in 5.9s
+   Skipping validation of types
+   Collecting page data using 15 workers ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+   Generating static pages using 15 workers (0/19) ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+Error occurred prerendering page "/admin/moderation". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: supabaseUrl is required.
+    at <unknown> (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\Downloads_smart-citizen-hub-platform_lib_supabase_client_ts_3b93cdc0._.js:37:43503)
+    at new b9 (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\Downloads_smart-citizen-hub-platform_lib_supabase_client_ts_3b93cdc0._.js:37:43754)
+    at module evaluation (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\Downloads_smart-citizen-hub-platform_lib_supabase_client_ts_3b93cdc0._.js:37:48036)
+    at instantiateModule (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.esmImport [as i] (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+    at module evaluation (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\Downloads_smart-citizen-hub-platform_a9064a54._.js:1:6051)
+    at instantiateModule (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+    at getOrInstantiateModuleFromParent (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+    at Context.commonJsRequire [as r] (C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\.next\server\chunks\ssr\[turbopack]_runtime.js:249:12) {
+  digest: '2007274206'
+}
+Export encountered an error on /admin/moderation/page: /admin/moderation, exiting the build.
+ Γ¿» Next.js build worker exited with code: 1 and signal: null

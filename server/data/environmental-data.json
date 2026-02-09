@@ -1,0 +1,161 @@
+{
+  "environmentalData": [
+    {
+      "id": "env_001",
+      "location": "Alkapuri, Vadodara",
+      "coordinates": {
+        "lat": 22.3039,
+        "lng": 73.2047
+      },
+      "airQuality": {
+        "aqi": 128,
+        "level": "unhealthy_for_sensitive_groups",
+        "color": "#ff7e14",
+        "description": "Unhealthy for Sensitive Groups"
+      },
+      "pollutants": {
+        "pm25": 45.2,
+        "pm10": 62.5,
+        "o3": 58.0,
+        "no2": 32.1,
+        "so2": 12.5,
+        "co": 450.0
+      },
+      "temperature": 32,
+      "humidity": 65,
+      "windSpeed": 12,
+      "visibility": 8,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "worsening"
+    },
+    {
+      "id": "env_002",
+      "location": "Sayaji Baug Area, Vadodara",
+      "coordinates": {
+        "lat": 22.3195,
+        "lng": 73.1953
+      },
+      "airQuality": {
+        "aqi": 78,
+        "level": "moderate",
+        "color": "#ffff00",
+        "description": "Moderate"
+      },
+      "pollutants": {
+        "pm25": 28.5,
+        "pm10": 38.9,
+        "o3": 42.0,
+        "no2": 18.5,
+        "so2": 8.3,
+        "co": 280.0
+      },
+      "temperature": 30,
+      "humidity": 61,
+      "windSpeed": 15,
+      "visibility": 12,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "improving"
+    },
+    {
+      "id": "env_003",
+      "location": "Vastrapur, Vadodara",
+      "coordinates": {
+        "lat": 22.3233,
+        "lng": 73.1861
+      },
+      "airQuality": {
+        "aqi": 52,
+        "level": "good",
+        "color": "#00e400",
+        "description": "Good"
+      },
+      "pollutants": {
+        "pm25": 18.5,
+        "pm10": 25.3,
+        "o3": 28.0,
+        "no2": 12.3,
+        "so2": 5.2,
+        "co": 180.0
+      },
+      "temperature": 29,
+      "humidity": 59,
+      "windSpeed": 18,
+      "visibility": 15,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "stable"
+    },
+    {
+      "id": "env_004",
+      "location": "Makarpura Industrial Area, Vadodara",
+      "coordinates": {
+        "lat": 22.3389,
+        "lng": 73.2281
+      },
+      "airQuality": {
+        "aqi": 95,
+        "level": "unhealthy_for_sensitive_groups",
+        "color": "#ff7e14",
+        "description": "Unhealthy for Sensitive Groups"
+      },
+      "pollutants": {
+        "pm25": 38.2,
+        "pm10": 52.8,
+        "o3": 52.0,
+        "no2": 28.4,
+        "so2": 10.7,
+        "co": 380.0
+      },
+      "temperature": 31,
+      "humidity": 72,
+      "windSpeed": 10,
+      "visibility": 9,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "worsening"
+    },
+    {
+      "id": "env_005",
+      "location": "Karelibaugh, Vadodara",
+      "coordinates": {
+        "lat": 22.3078,
+        "lng": 73.1889
+      },
+      "airQuality": {
+        "aqi": 68,
+        "level": "moderate",
+        "color": "#ffff00",
+        "description": "Moderate"
+      },
+      "pollutants": {
+        "pm25": 25.1,
+        "pm10": 35.5,
+        "o3": 38.5,
+        "no2": 15.8,
+        "so2": 7.1,
+        "co": 250.0
+      },
+      "temperature": 30,
+      "humidity": 63,
+      "windSpeed": 14,
+      "visibility": 11,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "stable"
+    }
+  ],
+  "summary": {
+    "averageAQI": 84.2,
+    "worstArea": "Alkapuri (AQI: 128)",
+    "bestArea": "Vastrapur (AQI: 52)",
+    "areasOfConcern": 2,
+    "averageTemperature": 30.4,
+    "averageHumidity": 64,
+    "lastUpdated": "2025-02-07T10:30:00Z",
+    "aqiLevels": {
+      "good": 1,
+      "moderate": 2,
+      "unhealthy_for_sensitive_groups": 2,
+      "unhealthy": 0,
+      "very_unhealthy": 0,
+      "hazardous": 0
+    }
+  }
+}

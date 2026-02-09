@@ -1,0 +1,593 @@
+
+> my-v0-project@0.1.0 build
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ ΓÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\Priyansh\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Priyansh\Downloads\smart-citizen-hub-platform\pnpm-lock.yaml
+
+   Γû▓ Next.js 16.0.10 (Turbopack)
+   - Environments: .env.local
+
+ ΓÜá The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+> Build error occurred
+Error: Turbopack build failed with 20 errors:
+./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts:4:10
+Ecmascript file had an error
+  2 | import connectDB from '@/lib/db'
+  3 | import Report from '@/lib/models/Report'
+> 4 | import { revalidatePath } from 'next/cache'
+    |          ^^^^^^^^^^^^^^
+  5 |
+  6 | async function getSessionUser() {
+  7 |     const session = await auth()
+
+You're importing a component that needs "revalidatePath". That only works in a Server Component but one of its parents is marked with "use client", so it's a Client Component.
+Learn more: https://nextjs.org/docs/app/building-your-application/rendering
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component SSR]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Client Component SSR]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/page.tsx [Server Component]
+
+
+./Downloads/smart-citizen-hub-platform/app/admin/layout.tsx:8:1
+Module not found: Can't resolve '@/lib/supabase/client'
+   6 | import Link from 'next/link'
+   7 | import { useRouter } from 'next/navigation'
+>  8 | import { supabase } from '@/lib/supabase/client'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { Button } from '@/components/ui/button'
+  10 | import { Menu, X, BarChart3, FileText, Users, AlertCircle, LogOut } from 'lucide-react'
+  11 |
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/Downloads/smart-citizen-hub-platform
+
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/app/admin/layout.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/admin/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/smart-citizen-hub-platform/app/admin/layout.tsx [Client Component SSR]
+    ./Downloads/smart-citizen-hub-platform/app/admin/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/app/dashboard/layout.tsx:8:1
+Module not found: Can't resolve '@/lib/supabase/client'
+   6 | import Link from 'next/link'
+   7 | import { useRouter } from 'next/navigation'
+>  8 | import { supabase } from '@/lib/supabase/client'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { Button } from '@/components/ui/button'
+  10 | import { Menu, X } from 'lucide-react'
+  11 |
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/Downloads/smart-citizen-hub-platform
+
+
+Import traces:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/layout.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/layout.tsx [Client Component SSR]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx:7:1
+Module not found: Can't resolve '@/lib/supabase/client'
+   5 | import { useState } from 'react'
+   6 | import { useRouter } from 'next/navigation'
+>  7 | import { supabase } from '@/lib/supabase/client'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { createReport } from '@/app/actions/report-actions'
+   9 | import { Button } from '@/components/ui/button'
+  10 | import { Input } from '@/components/ui/input'
+
+Import map: aliased to relative './lib/supabase/client' inside of [project]/Downloads/smart-citizen-hub-platform
+
+
+Import trace:
+  Server Component:
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/mongoose.js:42:31
+Module not found: Can't resolve 'async_hooks'
+  40 | const objectIdHexRegexp = /^[0-9A-Fa-f]{24}$/;
+  41 |
+> 42 | const { AsyncLocalStorage } = require('async_hooks');
+     |                               ^^^^^^^^^^^^^^^^^^^^^^
+  43 |
+  44 | /**
+  45 |  * Mongoose constructor.
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/mongoose.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/models/Report.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/mongocryptd_manager.js:39:27
+Module not found: Can't resolve 'child_process'
+  37 |         const cmdName = this.spawnPath || 'mongocryptd';
+  38 |         // eslint-disable-next-line @typescript-eslint/no-require-imports
+> 39 |         const { spawn } = require('child_process');
+     |                           ^^^^^^^^^^^^^^^^^^^^^^^^
+  40 |         // Spawned with stdio: ignore and detached: true
+  41 |         // to ensure child can outlive parent.
+  42 |         this._child = spawn(cmdName, this.spawnArgs, {
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/mongocryptd_manager.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/models/Report.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/gssapi.js:6:13
+Module not found: Can't resolve 'dns'
+  4 | exports.performGSSAPICanonicalizeHostName = performGSSAPICanonicalizeHostName;
+  5 | exports.resolveCname = resolveCname;
+> 6 | const dns = require("dns");
+    |             ^^^^^^^^^^^^^^
+  7 | const deps_1 = require("../../deps");
+  8 | const error_1 = require("../../error");
+  9 | const utils_1 = require("../../utils");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/gssapi.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/connection_string.js:6:13
+Module not found: Can't resolve 'dns'
+  4 | exports.resolveSRVRecord = resolveSRVRecord;
+  5 | exports.parseOptions = parseOptions;
+> 6 | const dns = require("dns");
+    |             ^^^^^^^^^^^^^^
+  7 | const mongodb_connection_string_url_1 = require("mongodb-connection-string-url");
+  8 | const url_1 = require("url");
+  9 | const mongo_credentials_1 = require("./cmap/auth/mongo_credentials");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/connection_string.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/sdam/srv_polling.js:4:13
+Module not found: Can't resolve 'dns'
+  2 | Object.defineProperty(exports, "__esModule", { value: true });
+  3 | exports.SrvPoller = exports.SrvPollingEvent = void 0;
+> 4 | const dns = require("dns");
+    |             ^^^^^^^^^^^^^^
+  5 | const timers_1 = require("timers");
+  6 | const error_1 = require("../error");
+  7 | const mongo_types_1 = require("../mongo_types");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/sdam/srv_polling.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/token_machine_workflow.js:4:12
+Module not found: Can't resolve 'fs'
+  2 | Object.defineProperty(exports, "__esModule", { value: true });
+  3 | exports.callback = void 0;
+> 4 | const fs = require("fs");
+    |            ^^^^^^^^^^^^^
+  5 | const error_1 = require("../../../error");
+  6 | /** Error for when the token is missing in the environment. */
+  7 | const TOKEN_MISSING_ERROR = 'OIDC_TOKEN_FILE must be set in the environment.';
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/token_machine_workflow.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client_auth_providers.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client.js:4:14
+Module not found: Can't resolve 'fs'
+  2 | Object.defineProperty(exports, "__esModule", { value: true });
+  3 | exports.MongoClient = exports.ServerApiVersion = void 0;
+> 4 | const fs_1 = require("fs");
+    |              ^^^^^^^^^^^^^
+  5 | const _1 = require(".");
+  6 | const bson_1 = require("./bson");
+  7 | const change_stream_1 = require("./change_stream");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/utils.js:54:14
+Module not found: Can't resolve 'fs'
+  52 | exports.abortable = abortable;
+  53 | const crypto = require("crypto");
+> 54 | const fs_1 = require("fs");
+     |              ^^^^^^^^^^^^^
+  55 | const http = require("http");
+  56 | const timers_1 = require("timers");
+  57 | const url = require("url");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/utils.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/change_stream.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/state_machine.js:4:12
+Module not found: Can't resolve 'fs/promises'
+  2 | Object.defineProperty(exports, "__esModule", { value: true });
+  3 | exports.StateMachine = void 0;
+> 4 | const fs = require("fs/promises");
+    |            ^^^^^^^^^^^^^^^^^^^^^^
+  5 | const net = require("net");
+  6 | const tls = require("tls");
+  7 | const bson_1 = require("../bson");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/state_machine.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/models/Report.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js:4:20
+Module not found: Can't resolve 'fs/promises'
+  2 | Object.defineProperty(exports, "__esModule", { value: true });
+  3 | exports.callback = void 0;
+> 4 | const promises_1 = require("fs/promises");
+    |                    ^^^^^^^^^^^^^^^^^^^^^^
+  5 | /** The fallback file name */
+  6 | const FALLBACK_FILENAME = '/var/run/secrets/kubernetes.io/serviceaccount/token';
+  7 | /** The azure environment variable for the file name. */
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/k8s_machine_workflow.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client_auth_providers.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js:5:13
+Module not found: Can't resolve 'net'
+  3 | Object.defineProperty(exports, "__esModule", { value: true });
+  4 | exports.AutoEncrypter = exports.AutoEncryptionLoggerLevel = void 0;
+> 5 | const net = require("net");
+    |             ^^^^^^^^^^^^^^
+  6 | const bson_1 = require("../bson");
+  7 | const constants_1 = require("../constants");
+  8 | const deps_1 = require("../deps");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/models/Report.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/state_machine.js:5:13
+Module not found: Can't resolve 'net'
+  3 | exports.StateMachine = void 0;
+  4 | const fs = require("fs/promises");
+> 5 | const net = require("net");
+    |             ^^^^^^^^^^^^^^
+  6 | const tls = require("tls");
+  7 | const bson_1 = require("../bson");
+  8 | const abstract_cursor_1 = require("../cursor/abstract_cursor");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/state_machine.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/models/Report.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/connect.js:9:13
+Module not found: Can't resolve 'net'
+   7 | exports.prepareHandshakeDocument = prepareHandshakeDocument;
+   8 | exports.makeSocket = makeSocket;
+>  9 | const net = require("net");
+     |             ^^^^^^^^^^^^^^
+  10 | const tls = require("tls");
+  11 | const constants_1 = require("../constants");
+  12 | const deps_1 = require("../deps");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/connect.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/sdam/monitor.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/connection_string.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/callback_workflow.js:4:20
+Module not found: Can't resolve 'timers/promises'
+  2 | Object.defineProperty(exports, "__esModule", { value: true });
+  3 | exports.CallbackWorkflow = exports.AUTOMATED_TIMEOUT_MS = exports.HUMAN_TIMEOUT_MS = void 0;
+> 4 | const promises_1 = require("timers/promises");
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | const error_1 = require("../../../error");
+  6 | const utils_1 = require("../../../utils");
+  7 | const command_builders_1 = require("./command_builders");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/callback_workflow.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/auth/mongodb_oidc/human_callback_workflow.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client_auth_providers.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/state_machine.js:6:13
+Module not found: Can't resolve 'tls'
+  4 | const fs = require("fs/promises");
+  5 | const net = require("net");
+> 6 | const tls = require("tls");
+    |             ^^^^^^^^^^^^^^
+  7 | const bson_1 = require("../bson");
+  8 | const abstract_cursor_1 = require("../cursor/abstract_cursor");
+  9 | const deps_1 = require("../deps");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/state_machine.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/models/Report.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/new/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/connect.js:10:13
+Module not found: Can't resolve 'tls'
+   8 | exports.makeSocket = makeSocket;
+   9 | const net = require("net");
+> 10 | const tls = require("tls");
+     |             ^^^^^^^^^^^^^^
+  11 | const constants_1 = require("../constants");
+  12 | const deps_1 = require("../deps");
+  13 | const error_1 = require("../error");
+
+
+
+Import trace:
+  Client Component Browser:
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/cmap/connect.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/sdam/monitor.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/connection_string.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/mongo_client.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongodb/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/lib/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/node_modules/mongoose/index.js [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/lib/db.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Client Component Browser]
+    ./Downloads/smart-citizen-hub-platform/components/reports/reports-list.tsx [Server Component]
+    ./Downloads/smart-citizen-hub-platform/app/dashboard/reports/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./Downloads/smart-citizen-hub-platform/app/actions/report-actions.ts:4:10)
+    at <unknown> (./Downloads/smart-citizen-hub-platform/app/admin/layout.tsx:8:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Downloads/smart-citizen-hub-platform/app/dashboard/layout.tsx:8:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Downloads/smart-citizen-hub-platform/components/reports/report-form.tsx:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
