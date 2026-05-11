@@ -1,0 +1,103 @@
+{
+  "trafficUpdates": [
+    {
+      "id": "traffic_001",
+      "location": "Alkapuri Road, Vadodara",
+      "coordinates": {
+        "lat": 22.3039,
+        "lng": 73.2047
+      },
+      "congestionLevel": "high",
+      "congestionPercentage": 85,
+      "averageSpeed": 12,
+      "speedLimit": 25,
+      "vehicles": 250,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "increasing",
+      "estimatedDelay": 15,
+      "roadCondition": "wet",
+      "incidents": 2
+    },
+    {
+      "id": "traffic_002",
+      "location": "Fatehgunj Crossroads, Vadodara",
+      "coordinates": {
+        "lat": 22.3100,
+        "lng": 73.1950
+      },
+      "congestionLevel": "moderate",
+      "congestionPercentage": 65,
+      "averageSpeed": 18,
+      "speedLimit": 25,
+      "vehicles": 180,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "stable",
+      "estimatedDelay": 8,
+      "roadCondition": "dry",
+      "incidents": 1
+    },
+    {
+      "id": "traffic_003",
+      "location": "Sayaji Baug, Vadodara",
+      "coordinates": {
+        "lat": 22.3195,
+        "lng": 73.1953
+      },
+      "congestionLevel": "low",
+      "congestionPercentage": 35,
+      "averageSpeed": 22,
+      "speedLimit": 25,
+      "vehicles": 95,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "decreasing",
+      "estimatedDelay": 2,
+      "roadCondition": "dry",
+      "incidents": 0
+    },
+    {
+      "id": "traffic_004",
+      "location": "Race Course Road, Vadodara",
+      "coordinates": {
+        "lat": 22.3022,
+        "lng": 73.2113
+      },
+      "congestionLevel": "high",
+      "congestionPercentage": 78,
+      "averageSpeed": 14,
+      "speedLimit": 30,
+      "vehicles": 220,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "increasing",
+      "estimatedDelay": 12,
+      "roadCondition": "wet",
+      "incidents": 1
+    },
+    {
+      "id": "traffic_005",
+      "location": "Makarpura Junction, Vadodara",
+      "coordinates": {
+        "lat": 22.3389,
+        "lng": 73.2281
+      },
+      "congestionLevel": "moderate",
+      "congestionPercentage": 55,
+      "averageSpeed": 20,
+      "speedLimit": 25,
+      "vehicles": 150,
+      "timestamp": "2025-02-07T10:30:00Z",
+      "trend": "stable",
+      "estimatedDelay": 5,
+      "roadCondition": "dry",
+      "incidents": 0
+    }
+  ],
+  "summary": {
+    "totalLocations": 5,
+    "highCongestionCount": 2,
+    "moderateCongestionCount": 2,
+    "lowCongestionCount": 1,
+    "averageCongestion": 63.6,
+    "totalIncidents": 4,
+    "lastUpdated": "2025-02-07T10:30:00Z"
+  }
+}

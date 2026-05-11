@@ -1,0 +1,103 @@
+{
+  "vehicles": [
+    {
+      "id": "TRUCK-01",
+      "name": "Fleet Vehicle 1",
+      "lat": 22.3078,
+      "lng": 73.1815,
+      "area": "Sayajigunj",
+      "address": "Sayajigunj, Vadodara, Gujarat",
+      "status": "active",
+      "load": 45,
+      "lastUpdated": "2026-02-07T10:30:00Z"
+    },
+    {
+      "id": "TRUCK-02",
+      "name": "Fleet Vehicle 2",
+      "lat": 22.3117,
+      "lng": 73.1656,
+      "area": "Alkapuri",
+      "address": "Alkapuri, Vadodara, Gujarat",
+      "status": "maintenance",
+      "load": 0,
+      "lastUpdated": "2026-02-07T10:25:00Z"
+    },
+    {
+      "id": "TRUCK-03",
+      "name": "Fleet Vehicle 3",
+      "lat": 22.3149,
+      "lng": 73.1323,
+      "area": "Gotri",
+      "address": "Gotri, Vadodara, Gujarat",
+      "status": "active",
+      "load": 82,
+      "lastUpdated": "2026-02-07T10:35:00Z"
+    },
+    {
+      "id": "TRUCK-04",
+      "name": "Fleet Vehicle 4",
+      "lat": 22.3613,
+      "lng": 73.1662,
+      "area": "Chhani",
+      "address": "Chhani, Vadodara, Gujarat",
+      "status": "active",
+      "load": 62,
+      "lastUpdated": "2026-02-07T10:32:00Z"
+    },
+    {
+      "id": "TRUCK-05",
+      "name": "Fleet Vehicle 5",
+      "lat": 22.2708,
+      "lng": 73.1880,
+      "area": "Manjalpur",
+      "address": "Manjalpur, Vadodara, Gujarat",
+      "status": "inactive",
+      "load": 0,
+      "lastUpdated": "2026-02-07T09:00:00Z"
+    },
+    {
+      "id": "TRUCK-06",
+      "name": "Fleet Vehicle 6",
+      "lat": 22.3229,
+      "lng": 73.2102,
+      "area": "Karelibaug",
+      "address": "Karelibaug, Vadodara, Gujarat",
+      "status": "active",
+      "load": 75,
+      "lastUpdated": "2026-02-07T10:33:00Z"
+    },
+    {
+      "id": "TRUCK-07",
+      "name": "Fleet Vehicle 7",
+      "lat": 22.3078,
+      "lng": 73.1815,
+      "area": "Sayajigunj",
+      "address": "Sayajigunj, Vadodara, Gujarat",
+      "status": "maintenance",
+      "load": 0,
+      "lastUpdated": "2026-02-07T10:20:00Z"
+    },
+    {
+      "id": "TRUCK-08",
+      "name": "Fleet Vehicle 8",
+      "lat": 22.3117,
+      "lng": 73.1656,
+      "area": "Alkapuri",
+      "address": "Alkapuri, Vadodara, Gujarat",
+      "status": "inactive",
+      "load": 0,
+      "lastUpdated": "2026-02-07T08:30:00Z"
+    },
+    {
+      "id": "TRUCK-09",
+      "name": "Fleet Vehicle 9",
+      "lat": 22.3149,
+      "lng": 73.1323,
+      "area": "Gotri",
+      "address": "Gotri, Vadodara, Gujarat",
+      "status": "active",
+      "load": 55,
+      "lastUpdated": "2026-02-07T10:34:00Z"
+    }
+  ]
+}
